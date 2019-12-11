@@ -22,5 +22,6 @@ stages {
             app.push("latest")
         }
     }
+  }
 }
 
