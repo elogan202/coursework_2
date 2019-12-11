@@ -1,7 +1,10 @@
-pipeline { environment{
+pipeline { 
+environment{
     registry = "elogan202/coursework2"
     registryCredential = 'dockerhub'
-  }  agent any  stages {
+  }  
+agent any  
+stages {
     stage('Building image') {
       steps{
         script {
