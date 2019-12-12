@@ -7,7 +7,7 @@ stages
       steps{
         script {
           docker.build registry + ":$BUILD_NUMBER"
-		app = docker.build("getintodevops/hellonode")
+		app = docker.build("elogan202/coursework2")
 			}
 	 }
 }
