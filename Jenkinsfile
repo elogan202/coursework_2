@@ -33,7 +33,7 @@ stages
 	{
 		environment
 		{
-			scannerHome = tool 'SonarQubeScanner'
+			scannerHome = tool 'SonarQube'
 		}
 			steps
 			{
