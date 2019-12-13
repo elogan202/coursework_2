@@ -43,9 +43,12 @@ stages
 				}
 			}
 	}	
-	stage('Deploy Image')
+	stage('Deploy Update')
 	{
-		sh 'ssh -t azureuser@13.82.193.106 kubectl set image deployments/serverjs serverjs=elogan202/serverjs:v1'
+		steps
+		{
+			sh 'ssh -t azureuser@13.82.193.106 kubectl set image deployments/kubernetes/latest serverjs=elogan202/serverjs:v10'
+		}
 	}
 }
 	}
