@@ -43,6 +43,10 @@ stages
 				}
 			}
 	}	
+	stage('Deploy Image')
+	{
+		sh 'ssh -t azureuser@13.82.193.106 kubectl set image deployments/serverjs serverjs=elogan202/serverjs:v1'
+	}
 }
 	}
 
